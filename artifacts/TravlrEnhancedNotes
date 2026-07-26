@@ -1,65 +1,72 @@
-# CS499 Milestone Three Enhancement Notes
+# Travlr Getaways - CS499 Milestone Three Enhancement
 
-Artifact:
-Travlr Getaways Full Stack Application
+## Artifact Overview
 
-Original Course:
-CS465 Full Stack Development
+Travlr Getaways is a full-stack travel application originally developed during CS465 Full Stack Development.
 
-Enhancement Category:
-Algorithms and Data Structures
+The application uses an Angular administrative interface, an Express backend API, and MongoDB database integration to manage travel information.
 
-Enhancements Completed:
+For CS499 Computer Science Capstone, this artifact was enhanced to demonstrate improvements in algorithms and data structures.
 
-1. Trip Search Functionality
-- Added filtering logic allowing administrators to search trips by name, resort, and description.
+---
 
-2. Trip Sorting Functionality
-- Added sorting options:
-  - Name A-Z
-  - Name Z-A
-  - Price Low-High
-  - Price High-Low
+# Enhancements Completed
 
-3. Admin Dashboard Improvements
-- Updated Angular admin interface.
-- Improved trip card presentation.
-- Improved usability for administrators.
+## 1. Trip Search Functionality
 
-Files Modified:
+A dynamic search feature was added to the administrator dashboard.
+
+Administrators can now search trips based on:
+
+- Trip name
+- Resort location
+- Trip description
+
+This enhancement uses filtering logic to process stored trip data and return matching results.
+
+---
+
+## 2. Trip Sorting Functionality
+
+Sorting capabilities were added to allow administrators to organize trip information.
+
+Available sorting options include:
+
+- Name (A-Z)
+- Name (Z-A)
+- Price (Low to High)
+- Price (High to Low)
+
+This enhancement demonstrates comparison-based sorting and data transformation.
+
+---
+
+## 3. Administrator Dashboard Improvements
+
+The administrative interface was redesigned to improve usability.
+
+Improvements include:
+
+- Updated dashboard layout
+- Improved trip cards
+- Better organization of trip information
+- Improved user interaction
+
+---
+
+# Files Modified
+
+Major files modified include:
 
 - app_admin/src/app/trip-listing/trip-listing.component.ts
 - app_admin/src/app/trip-listing/trip-listing.component.html
 - app_admin/src/app/trip-card/trip-card.component.html
-- Additional supporting application files.
+- app_admin/src/app/add-trip components
+- app.js
+- API routing files
 
-Purpose:
+---
 
-These enhancements demonstrate the application of searching, filtering, and sorting algorithms to improve user interaction with application data.
+# Evidence
 
-## Artifact Description
-
-Travlr Getaways is a full-stack travel application originally developed during CS465 Full Stack Development.
-
-## CS499 Enhancements
-
-The enhanced version focuses on improving the administrative experience through algorithmic improvements and interface updates.
-
-### Completed Enhancements
-
-- Added trip searching functionality
-- Added trip sorting functionality
-- Improved administrator dashboard layout
-- Improved trip card presentation
-- Added enhanced trip management workflow
-
-### Algorithms Demonstrated
-
-- Array filtering
-- String comparison
-- Sorting logic
-- Data transformation for price comparisons
-
-## Evidence
-
-The screenshots contain before and after examples demonstrating the enhancements.
+The screenshots within each different folder contains before and after examples demonstrating the completed enhancements.
