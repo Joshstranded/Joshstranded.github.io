@@ -1,0 +1,13 @@
+<h2 class="text-center">Travlr Getaways Admin</h2>
+
+<div class="text-center mb-3">
+  <button class="btn btn-primary" (click)="addTrip()">Add Trip</button>
+</div>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let trip of trips">
+    <app-trip-card [trip]="trip"></app-trip-card>
+  </div>
+</div>
+
+<p class="text-center">{{ message }}</p>                                               
