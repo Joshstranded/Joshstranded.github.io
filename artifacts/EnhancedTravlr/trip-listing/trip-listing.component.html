@@ -1,0 +1,117 @@
+<div class="container">
+
+  <h2 class="text-center mb-4">
+    Travlr Getaways Admin Dashboard
+  </h2>
+
+  <div class="card mb-4 shadow-sm">
+
+    <div class="card-body text-center">
+
+      <h5>Trip Management</h5>
+
+      <p>
+        Manage available travel packages and quickly search through available trips.
+      </p>
+
+      <button
+        class="btn btn-primary"
+        (click)="addTrip()">
+        Add New Trip
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- Search Bar -->
+
+  <div class="card shadow-sm mb-3">
+
+    <div class="card-body">
+
+      <label class="form-label">
+        Search Trips
+      </label>
+
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search by trip name, resort, or description..."
+        [(ngModel)]="searchText"
+        (input)="filterTrips()">
+
+    </div>
+
+  </div>
+ <!-- Sort Trips -->
+
+  <div class="card shadow-sm mb-3">
+
+    <div class="card-body">
+
+      <label class="form-label">
+        Sort Trips
+      </label>
+
+
+      <select
+        class="form-select"
+        [(ngModel)]="sortOption"
+        (change)="sortTrips()">
+
+
+        <option value="nameAsc">
+          Name (A-Z)
+        </option>
+
+
+        <option value="nameDesc">
+          Name (Z-A)
+        </option>
+
+
+        <option value="priceLow">
+          Price (Low to High)
+        </option>
+
+
+        <option value="priceHigh">
+          Price (High to Low)
+        </option>
+
+
+      </select>
+
+
+    </div>
+
+  </div>
+
+  <!-- Status -->
+
+  <div class="alert alert-info text-center">
+
+    {{ message }}
+
+  </div>
+
+
+  <!-- Cards -->
+
+  <div class="row">
+
+    <div
+      class="col-lg-4 col-md-6 mb-4"
+      *ngFor="let trip of filteredTrips">
+
+      <app-trip-card
+        [trip]="trip">
+      </app-trip-card>
+
+    </div>
+
+  </div>
+
+</div>
