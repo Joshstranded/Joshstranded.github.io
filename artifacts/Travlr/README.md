@@ -1,3 +1,3 @@
 # Travlr Getaways
 
-CS499 enhancement artifact.
+This is the original files for the Travlr Getaways Project From CS465 Before The Enhancements! 
