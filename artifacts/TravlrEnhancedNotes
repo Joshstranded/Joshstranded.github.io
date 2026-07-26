@@ -1,0 +1,38 @@
+# CS499 Milestone Three Enhancement Notes
+
+Artifact:
+Travlr Getaways Full Stack Application
+
+Original Course:
+CS465 Full Stack Development
+
+Enhancement Category:
+Algorithms and Data Structures
+
+Enhancements Completed:
+
+1. Trip Search Functionality
+- Added filtering logic allowing administrators to search trips by name, resort, and description.
+
+2. Trip Sorting Functionality
+- Added sorting options:
+  - Name A-Z
+  - Name Z-A
+  - Price Low-High
+  - Price High-Low
+
+3. Admin Dashboard Improvements
+- Updated Angular admin interface.
+- Improved trip card presentation.
+- Improved usability for administrators.
+
+Files Modified:
+
+- app_admin/src/app/trip-listing/trip-listing.component.ts
+- app_admin/src/app/trip-listing/trip-listing.component.html
+- app_admin/src/app/trip-card/trip-card.component.html
+- Additional supporting application files.
+
+Purpose:
+
+These enhancements demonstrate the application of searching, filtering, and sorting algorithms to improve user interaction with application data.
