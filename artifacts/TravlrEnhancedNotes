@@ -36,3 +36,15 @@ Files Modified:
 Purpose:
 
 These enhancements demonstrate the application of searching, filtering, and sorting algorithms to improve user interaction with application data.
+
+## Algorithms and Data Structure Enhancements
+
+The enhanced Travlr application introduced improved data processing capabilities within the administrative dashboard.
+
+Enhancements included:
+
+- Search functionality allowing users to filter trip data dynamically.
+- Sorting algorithms allowing administrators to organize trips by name and price.
+- Data transformation logic to convert formatted price strings into numerical values for comparison.
+
+These enhancements improved the usability of the application while demonstrating practical implementation of algorithmic problem solving.
