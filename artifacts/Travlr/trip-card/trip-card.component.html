@@ -1,0 +1,33 @@
+<div class="card mb-3">
+
+  <img
+    [src]="'http://localhost:3000/images/' + trip.image"
+    class="card-img-top"
+    alt="trip image"
+  />
+
+  <div class="card-body">
+
+    <h5 class="card-title">
+      {{ trip.name }}
+    </h5>
+
+    <p class="card-text">
+      {{ trip.description }}
+    </p>
+
+    <p><strong>Resort:</strong> {{ trip.resort }}</p>
+    <p><strong>Length:</strong> {{ trip.length }}</p>
+    <p><strong>Price:</strong> {{ trip.perPerson }}</p>
+
+    <!--  SHOULD ONLY SHOW EDIT IF LOGGED IN -->
+    <button
+      *ngIf="isLoggedIn()"
+      class="btn btn-warning"
+      (click)="editTrip(trip)">
+      Edit Trip
+    </button>
+
+  </div>
+
+</div>
